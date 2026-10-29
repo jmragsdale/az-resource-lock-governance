@@ -1,4 +1,53 @@
-# Azure Resource Lock Governance
+<a id="azure-resource-lock-governance"></a>
+
+<a href="#setup-guide">
+<picture>
+  <source media="(max-width: 600px)" srcset="docs/assets/readme/header-mobile.png">
+  <img src="docs/assets/readme/header.png" width="1440" alt="Azure Resource Governance. A Terraform reference for Azure Resource Locks and policy-based configuration, with usage examples and input definitions.">
+</picture>
+</a>
+
+<p>
+  <a href="#setup-guide"><strong>Start here ↗</strong></a> &nbsp; / &nbsp;
+  <a href="main.tf">Source</a> &nbsp; / &nbsp;
+  <a href="#project-guide">Project guide</a> &nbsp; / &nbsp;
+  <a href="https://github.com/jmragsdale">Profile</a>
+</p>
+
+A Terraform reference for Azure Resource Locks and policy-based configuration, with usage examples and input definitions.
+
+## Explore the project
+
+Open a card for source, examples or supporting documentation.
+
+<p>
+<a href="#architecture-guide">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/architecture-dark.png">
+  <img src="docs/assets/readme/architecture-light.png" width="360" alt="Follow the architecture. Review the components and the documented processing or access flow.">
+</picture>
+</a>
+<a href="main.tf">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/source-dark.png">
+  <img src="docs/assets/readme/source-light.png" width="360" alt="Read the Terraform source. Inspect infrastructure declarations and their configuration inputs.">
+</picture>
+</a>
+<a href="variables.tf">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/inputs-dark.png">
+  <img src="docs/assets/readme/inputs-light.png" width="360" alt="Inspect input variables. Review lock, policy and exemption configuration inputs.">
+</picture>
+</a>
+<a href="#usage-guide">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/assets/readme/usage-dark.png">
+  <img src="docs/assets/readme/usage-light.png" width="360" alt="Read usage examples. Review the documented protection and authorized-change workflows.">
+</picture>
+</a>
+</p>
+
+## Project guide
 
 🛡️ Automated resource protection using Azure Resource Locks with policy-driven enforcement via Terraform
 
@@ -15,7 +64,12 @@ This project implements governance controls using Azure Resource Locks to preven
 - **Audit logging** for lock operations
 - **Exemption support** for break-glass scenarios
 
+<a id="architecture-guide"></a>
+
 ## Architecture
+
+<details>
+<summary>Architecture flow (text)</summary>
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
@@ -45,11 +99,15 @@ This project implements governance controls using Azure Resource Locks to preven
 └─────────────────────────────────────────────────────────────────┘
 ```
 
+</details>
+
 ## Prerequisites
 
 - Azure CLI configured (`az login`)
 - Terraform >= 1.0
 - Contributor + User Access Administrator role (or Owner)
+
+<a id="setup-guide"></a>
 
 ## Quick Start
 
@@ -77,6 +135,8 @@ terraform apply
 2. **Tag Your Resources**: Add `Protected = "true"` tag to any resource or resource group
 3. **Automatic Lock**: Azure Policy automatically applies a CanNotDelete lock
 4. **Protection Active**: Resources cannot be deleted until the lock is removed
+
+<a id="usage-guide"></a>
 
 ## Usage Examples
 
@@ -165,3 +225,10 @@ Apache 2.0
 ## Author
 
 Jermaine Ragsdale - Cloud Security Architect
+
+<details>
+<summary>README visual assets</summary>
+
+[Artwork sources and regeneration notes](docs/assets/readme/README.md).
+
+</details>

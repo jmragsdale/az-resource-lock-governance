@@ -1,0 +1,77 @@
+{
+  "title": "Azure Resource Governance",
+  "titleFontSize": 78,
+  "mobileTitle": [
+    "Azure resource",
+    "governance"
+  ],
+  "eyebrow": "CLOUD GOVERNANCE",
+  "tagline": "Resource protection through policy.",
+  "mobileTagline": [
+    "Resource protection",
+    "through policy."
+  ],
+  "description": [
+    "A Terraform reference for Azure resource locks and policy.",
+    "Tag-driven configuration, inputs and usage examples."
+  ],
+  "mobileDescription": [
+    "Azure resource locks and policy definitions.",
+    "Tag-driven inputs and usage examples."
+  ],
+  "footerLeft": "TERRAFORM",
+  "footerMiddle": "AZURE / RESOURCE LOCKS",
+  "footerRight": "POLICY / TAGS / LOCKS",
+  "diagram": [
+    "TAG",
+    "POLICY",
+    "LOCK"
+  ],
+  "summary": "A Terraform reference for Azure Resource Locks and policy-based configuration, with usage examples and input definitions.",
+  "cards": [
+    {
+      "slug": "architecture",
+      "category": "ARCHITECTURE",
+      "title": "Follow the architecture",
+      "lines": [
+        "Review the components and the",
+        "documented processing or access flow."
+      ],
+      "footer": "DESIGN / REFERENCE FLOW",
+      "href": "#architecture-guide"
+    },
+    {
+      "slug": "source",
+      "category": "IMPLEMENTATION",
+      "title": "Read the Terraform source",
+      "lines": [
+        "Inspect infrastructure declarations",
+        "and their configuration inputs."
+      ],
+      "footer": "SOURCE / REFERENCE CODE",
+      "href": "main.tf"
+    },
+    {
+      "slug": "inputs",
+      "category": "CONFIGURATION",
+      "title": "Inspect input variables",
+      "lines": [
+        "Review lock, policy and exemption",
+        "configuration inputs."
+      ],
+      "footer": "TERRAFORM / INPUT VARIABLES",
+      "href": "variables.tf"
+    },
+    {
+      "slug": "usage",
+      "category": "OPERATING NOTES",
+      "title": "Read usage examples",
+      "lines": [
+        "Review the documented protection",
+        "and authorized-change workflows."
+      ],
+      "footer": "AZURE CLI / USAGE NOTES",
+      "href": "#usage-guide"
+    }
+  ]
+}
